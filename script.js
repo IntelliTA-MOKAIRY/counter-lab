@@ -1,35 +1,26 @@
- let count = 0;
+  let count = 0;
 
-  const countDisplay = document.getElementById("count");
-  const incrementBtn = document.getElementById("increment");
-  const decrementBtn = document.getElementById("decrement");
-  const resetBtn = document.getElementById("reset");
-
-  function updateDisplay() {
-    countDisplay.textContent = count;
+  // Checkpoint 1: make increment() increase count by 1
+  function increment() {
+    // TODO
   }
 
-  incrementBtn.addEventListener("click", () => {
-    count++;
-  const incrementBtn = document.getElementById("increment");
-  const decrementBtn = document.getElementById("decrement");
-  const resetBtn = document.getElementById("reset");
-
-  function updateDisplay() {
-    countDisplay.textContent = count;
+  // Checkpoint 2: make decrement() decrease count by 1
+  function decrement() {
+    // TODO
   }
 
-  incrementBtn.addEventListener("click", () => {
-    count++;
-    updateDisplay();
-  });
+  // Checkpoint 3: make getCount() return the current count
+  function getCount() {
+    // TODO
+  }
 
-  decrementBtn.addEventListener("click", () => {
-    count--;
-    updateDisplay();
-  });
+  // Checkpoint 4: make displayCount() show the count in the #count element
+  function displayCount() {
+    // TODO
+  }
 
-  resetBtn.addEventListener("click", () => {
-    count = 0;
-    updateDisplay();
-  });
+  // Wiring (already done for you)
+  document.getElementById("increaseBtn").addEventListener("click", () => { increment(); displayCount(); });
+  document.getElementById("decreaseBtn").addEventListener("click", () => { decrement(); displayCount(); });
+  displayCount();
